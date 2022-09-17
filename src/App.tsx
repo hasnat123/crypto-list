@@ -1,7 +1,7 @@
 import React from "react";
-import Home from "./components/Home";
+import Home from "./Routes/Home/Home";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import CoinInfo from "./components/CoinInfo";
+import CoinInfo from "./Routes/CoinInfo/CoinInfo";
 
 function App() {
 

@@ -41,6 +41,7 @@
     border: none;
     background-image: linear-gradient(-225deg, #ac32e4 0%, #7918f2 48%, #4801ff 200%);
     color: #e2e2e2;
+    outline: none;
 }
 
 .coin-input::placeholder
@@ -128,4 +129,70 @@
 .green
 {
     color: #11d811;
+}
+
+/*Add coin section*/
+
+#add-coin
+{
+    margin-top: 5rem;
+}
+
+.add-coin-section
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.left, .right
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+.left
+{
+    margin-right: 1rem;
+}
+
+.right
+{
+    margin-left: 1rem;
+}
+
+.right input, .left input, textarea
+{
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem;
+    border: none;
+    background: #101011;
+    outline: none;
+}
+
+.add-coin-btn
+{
+    padding: 1rem 3rem;
+    margin: 3rem 0;
+    background: #101011;
+    font-size: 1.25em;
+    cursor: pointer;
+    outline: none;
+}
+
+/*Hiding number input arrows*/
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
