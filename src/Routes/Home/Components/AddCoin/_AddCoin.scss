@@ -1,0 +1,72 @@
+@mixin alignment($display, $justify-content, $align-items, $flex-direction, $width, $height)
+{
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $flex-direction;
+    width: $width;
+    height: $height;
+}
+
+#add-coin
+{
+    margin-top: 5rem;
+}
+
+.add-coin-section
+{
+    @include alignment(flex, center, flex-start, row, 100%, auto);
+
+    .left, .right
+    {
+
+        @include alignment(flex, center, center, column, 20%, auto);
+
+        input, textarea
+        {
+            width: 100%;
+            margin-top: 2rem;
+            padding: 1rem;
+            border: none;
+            background: #101011;
+            outline: none;
+
+            /*Hiding number input arrows*/
+
+            // Chrome, Safari, Edge, Opera 
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+
+            // Firefox 
+            &[type=number] {
+                -moz-appearance: textfield;
+            }
+        }
+    }
+    
+    .left
+    {
+        margin-right: 1rem;
+    }
+    
+    .right
+    {
+        margin-left: 1rem;
+    }
+}
+
+.add-coin-btn
+{
+    padding: 1rem 3rem;
+    margin: 3rem 0;
+    background: #101011;
+    font-size: 1.25em;
+    cursor: pointer;
+    outline: none;
+}
+
+
+

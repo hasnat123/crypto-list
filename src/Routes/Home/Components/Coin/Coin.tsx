@@ -18,11 +18,11 @@ const Coin: React.FC<IProps> = ({coin}) => {
                         
                         {coin.price_change_percentage_24h < 0 ? (
                         <p className="coin-percent red">{coin.price_change_percentage_24h.toFixed(2)}%</p>
-                    ) : (<p className="coin-percent green">{coin.price_change_percentage_24h.toFixed(2)}%</p>)}
+                        ) : (<p className="coin-percent green">{coin.price_change_percentage_24h.toFixed(2)}%</p>)}
                     
-                    <p className="coin-marketcap">
-                        Mkt Cap: ${coin.market_cap.toLocaleString()}
-                    </p>
+                        <p className="coin-marketcap">
+                            Mkt Cap: ${coin.market_cap.toLocaleString()}
+                        </p>
                     </div>
                 </div>
 
